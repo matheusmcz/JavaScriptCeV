@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 25px Times;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        /*
+        nome.length mostra a quantidade de letras de uma sting
+        numero.toFixed(2) coloca duas casa decimais
+        .replace('','') realiza a troca
+        numero.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
+        Adiciona a moeda brisileira.
+        */
+        var nome = window.prompt('Qual seu nome?')
+        document.write(`Olá ${nome.toUpperCase()}<br>`)
+        document.write(`Seu nome tem ${nome.length} letras`)
+        
+
+
+    </script>
+</body>
+</html>

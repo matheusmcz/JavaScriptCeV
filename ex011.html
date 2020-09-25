@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto obrigatorio</title>
+    <style>
+        div#voto{
+            margin-top: 2ch;
+        }
+    </style>
+</head>
+<body>
+    <h2>Voto</h2>
+    <input type="number" name="idade" placeholder="Idade"  id="idade">
+    <input type="button" value="ENVIAR" onclick="enviar()">
+    <div id="voto"></div>
+    <script>
+        function enviar(){
+            var idade = document.getElementById('idade')
+            var idade2 = Number(idade.value)
+            if(idade2 < 16){
+                voto.innerHTML = `Você tem ${idade2} anos, <strong>Voto não obrigatório</strong>.`
+            }else if(idade2 < 18 || idade2 >= 65){
+                voto.innerHTML = `Você tem ${idade2} anos, <strong>Voto Opcional</strong>.`
+            }else if(idade2 >= 18){
+                voto.innerHTML = `Você tem ${idade2} anos, <strong>Voto Obrigatório</strong>.`
+            }
+        }
+    </script>
+</body>
+</html>

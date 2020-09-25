@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        h2{
+            color: teal;
+        }
+    </style>
+</head>
+<body>
+    <h2>Nacionalidade</h2>    
+    <input type="text" nome="pais" placeholder="País" id="pais">
+    <input type="button" value="Sumit" onclick="submit()">
+    <div id="resultado">Resultado: </div>
+<script>
+    function submit(){ 
+        var nacionalidade = document.getElementById('pais').value
+        var resultado = document.getElementById('resultado')
+        if (nacionalidade != 'Brasil'){
+            resultado.innerHTML = 'Você é Estrangeiro!'
+        }
+        else{
+            resultado.innerHTML = 'Você é um dos safados.'
+        }
+    }
+
+
+
+
+</script>
+</body>
+</html>

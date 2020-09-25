@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area{
+            background: cadetblue;
+            color: rgb(110, 104, 194);
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- onclick = "clicar()" onmouseenter= "entrou()" onmouseout="saiu()" -->
+    <div id="area">
+    </div>
+               
+    </div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+        function entrou(){
+            a.innerText = 'Entrou'
+        }
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'blue'
+        }
+        function saiu(){
+            a.innerText = 'Saiu'
+            a.style.background = 'cadetblue'
+        }
+
+
+    </script>
+</body>
+</html>

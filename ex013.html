@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario</title>
+</head>
+<body>
+    <div id=saudacao></div>
+    <script>
+        var horario = new Date()
+        var hora = horario.getHours()
+        if(hora >=3 && hora < 12){
+            saudacao.innerHTML = `Bom dia`
+        }else if (hora >=12 && hora < 18){
+            saudacao.innerHTML = `Boa tarde`
+        }else{
+            saudacao.innerHTML = `Boa noite`
+        }
+    </script>
+    
+</body>
+</html>
